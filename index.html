@@ -1,1 +1,190 @@
-<h1> 나는 김상엽입니다. 테스트 </h1>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RC_2026: 자율주행 프로젝트</title>
+    <style>
+        /* 기본 테마 및 폰트 설정 (미래지향적 다크 테마) */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #0f172a;
+            color: #e2e8f0;
+            line-height: 1.6;
+            padding-bottom: 60px;
+        }
+
+        /* 헤더 영역 */
+        header {
+            background: linear-gradient(135deg, #1e1b4b 0%, #311042 100%);
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom: 3px solid #6366f1;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #38bdf8;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            color: #94a3b8;
+            font-size: 1.1rem;
+        }
+
+        /* 메인 컨테이너 */
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* 섹션 공통 스타일 */
+        section {
+            background-color: #1e293b;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+            border: 1px solid #334155;
+        }
+
+        section h2 {
+            font-size: 1.5rem;
+            color: #38bdf8;
+            margin-bottom: 20px;
+            border-left: 4px solid #6366f1;
+            padding-left: 10px;
+        }
+
+        /* 기술 스택 배지 */
+        .tech-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .tag {
+            background-color: #334155;
+            color: #38bdf8;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            border: 1px solid #475569;
+        }
+
+        /* 타임라인 (개발 과정 기록) */
+        .timeline {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .timeline-item {
+            border-left: 2px solid #475569;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -6px;
+            top: 6px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #6366f1;
+        }
+
+        .timeline-date {
+            font-size: 0.85rem;
+            color: #94a3b8;
+            font-weight: bold;
+        }
+
+        .timeline-title {
+            font-size: 1.1rem;
+            color: #f8fafc;
+            margin: 5px 0;
+        }
+
+        .timeline-desc {
+            color: #cbd5e1;
+            font-size: 0.95rem;
+        }
+
+        /* 링크 버튼 */
+        .btn-link {
+            display: inline-block;
+            background-color: #6366f1;
+            color: white;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: bold;
+            margin-top: 15px;
+            transition: background 0.2s ease;
+        }
+
+        .btn-link:hover {
+            background-color: #4f46e5;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>PROJECT: RC_2026</h1>
+        <p>자율주행 및 로봇 시스템 개발 프로세스 기록소</p>
+    </header>
+
+    <div class="container">
+        
+        <section>
+            <h2>프로젝트 개요</h2>
+            <p>
+                본 프로젝트는 하드웨어 제어와 소프트웨어 알고리즘을 융합한 <strong>자율주행 시스템 개발 과정</strong>을 기록하는 공간입니다. 
+                임베디드 환경에서의 효율적인 데이터 처리 및 센서 연동을 목표로 하고 있습니다.
+            </p>
+        </section>
+
+        <section>
+            <h2>사용 기술 스택 (Tech Stack)</h2>
+            <div class="tech-tags">
+                <span class="tag">C / C++</span>
+                <span class="tag">Python</span>
+                <span class="tag">Linux / WSL</span>
+                <span class="tag">Git & GitHub</span>
+            </div>
+        </section>
+
+        <section>
+            <h2>개발 마일스톤 (Timeline)</h2>
+            <div class="timeline">
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">Step 03. 진행 중</div>
+                    <div class="timeline-title">파이썬 스크립트 기반 데이터 포맷팅 및 제어</div>
+                    <div class="timeline-desc">연산자 오버로딩 개념 정립 및 `datetime` 모듈을 활용한 타임스탬프 로그 시스템 구현 진행.</div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">Step 02. 완료</div>
+                    <div class="timeline-title">C++ 개발 환경 및 OOP 아키텍처 설계</div>
+                    <div class="timeline-desc">상속, 다형성, 연산자 오버로딩 기법을 도입하여 확장성 있는 로봇 객체 관리 모듈 개발.</div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">Step 01. 완료</div>
+                    <div class="timeline-title">WSL2 기반 리눅스 개발 환경 구축</div>
+                    <div class="
