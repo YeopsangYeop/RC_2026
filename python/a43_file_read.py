@@ -16,7 +16,7 @@ def main():
         print(data)
 
         binary_data = b'\1\2\3'
-        with open(bin_url, "wb") as f:
+        with open(bin_url, "wb") as f: 
             f.write(binary_data)
         with open(bin_url, "rb") as f:
             data = f.read()
